@@ -3,6 +3,7 @@ In this repository, I have documented my solutions to various LeetCode problems,
 
 # How to navigate this repository
 To navigate this repository, each problem has its own folder with the problem name. The solution file is named using the problem number and a brief description of the problem.
+The purpose is to ensure a streamlined and efficient approach to problem-solving. Within each folder, the solution file has been meticulously named using the problem number and a concise description of the problem. This method of organization allows for ease of access and comprehension, as beginners can easily identify and locate the specific problem and solution files they require.
 
 # Purpose
 I am utilizing LeetCode to improve my problem-solving proficiency, coding skills, and to prepare for upcoming technical coding interviews. By solving these problems, I am expanding my knowledge of data structures, algorithms, and software design patterns. This allows me to strengthen my expertise in these areas and learn new concepts that I may not have been familiar with before. This experience helps me tackle complex coding challenges with increased confidence and efficiency. Additionally, the knowledge gained from LeetCode can be leveraged throughout my career as a software developer.
