@@ -1,0 +1,23 @@
+class Solution 
+{
+    public int[] intersection(int[] nums1, int[] nums2) 
+    {
+        ArrayList<Integer> same = new ArrayList<Integer>();
+        for (int i: nums1) 
+        {
+            for (int j: nums2) 
+            {
+                if (i == j && !same.contains(i)) 
+                {
+                    same.add(i);
+                }
+            }
+        }
+        int[] sameArray = new int[same.size()];
+        for (int i = 0; i < same.size(); i++) 
+        {
+            sameArray[i] = same.get(i);
+        }
+        return sameArray;
+    }
+}
