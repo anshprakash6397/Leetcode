@@ -8,7 +8,7 @@ class Solution
         {
             th=th+gain[i];
             if(th>ha)
-            ha=ha+th;
+            ha=th;
         }
         return ha;
     }
