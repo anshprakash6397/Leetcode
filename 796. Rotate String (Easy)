@@ -1,0 +1,10 @@
+class Solution 
+{
+    public boolean rotateString(String s, String goal) 
+    {
+        String ts=goal+goal;
+        if(s.length()!=goal.length())
+            return false;
+        return (ts.contains(s));
+    }
+}
