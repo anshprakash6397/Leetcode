@@ -1,0 +1,30 @@
+public class Solution {
+    public String countAndSay(int n) {
+        String sequence = "1";
+        
+        for (int i = 1; i < n; i++) {
+            StringBuilder next = new StringBuilder();
+            int c = 1;
+            
+            for (int j = 1; j <= sequence.length(); j++) {
+                if (j < sequence.length() && sequence.charAt(j) == sequence.charAt(j - 1)) {
+                    c++;
+                } else {
+                    next.append(c).append(sequence.charAt(j - 1));
+                    c = 1;
+                }
+            }
+            
+            sequence = next.toString();
+        }
+        
+        return sequence;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int n = 1;
+        String result = solution.countAndSay(n);
+        System.out.println(result);
+    }
+}
