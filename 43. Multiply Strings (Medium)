@@ -1,0 +1,33 @@
+class Solution {
+    public String multiply(String num1, String num2) {
+        if (num1.equals("0") || num2.equals("0")) {
+            return "0";
+        }
+
+        int n1 = num1.length();
+        int n2 = num2.length();
+        int[] product = new int[n1 + n2];
+
+        for (int i = n1 - 1; i >= 0; i--) {
+            int digit1 = num1.charAt(i) - '0';
+
+            for (int j = n2 - 1; j >= 0; j--) {
+                int digit2 = num2.charAt(j) - '0';
+                int sum = product[i + j + 1] + (digit1 * digit2);
+                product[i + j + 1] = sum % 10;
+                product[i + j] += sum / 10;
+            }
+        }
+
+        StringBuilder result = new StringBuilder();
+        for (int digit : product) {
+            result.append(digit);
+        }
+
+        if (result.charAt(0) == '0') {
+            result.deleteCharAt(0);
+        }
+
+        return result.toString();
+    }
+}
